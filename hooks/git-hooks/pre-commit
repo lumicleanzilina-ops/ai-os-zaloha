@@ -1,0 +1,24 @@
+#!/bin/sh
+# Git runs this POSIX wrapper (Git for Windows includes the interpreter).
+# Claude event hooks use Node exec form and do not require this shell.
+NODE=$(command -v node)
+if [ -z "$NODE" ]; then
+  echo "COMMIT BLOCKED — Node missing; secret inspection NOT VERIFIED." >&2
+  exit 1
+fi
+ROOT=$(git rev-parse --show-toplevel 2>/dev/null) || {
+  echo "COMMIT BLOCKED — Git root unavailable." >&2
+  exit 1
+}
+GUARD="$ROOT/hooks/secret-guard.mjs"
+# Repo bez vlastního kitu (třeba vault druhého mozku) s core.hooksPath na hooks/git-hooks
+# workspace: použij hlídač vedle tohoto skriptu.
+if [ ! -f "$GUARD" ]; then
+  GUARD="$(cd "$(dirname "$0")/.." 2>/dev/null && pwd)/secret-guard.mjs"
+fi
+if [ ! -f "$GUARD" ]; then
+  echo "🛑 secret-guard.mjs chybí ($GUARD) — commit pro jistotu zastaven." >&2
+  exit 1
+fi
+
+exec "$NODE" "$GUARD" --staged

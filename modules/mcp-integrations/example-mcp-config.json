@@ -1,0 +1,30 @@
+{
+  "//": "Generic .mcp.json example for the AI Chief of Staff kit. Copy, keep only the servers you use, and fill in the placeholders. NEVER put real API keys here — reference env vars as ${VAR_NAME} and set them in a gitignored .secrets/.env file.",
+  "mcpServers": {
+    "email": {
+      "//": "Local stdio server launched by the runtime. Reads its key from the environment.",
+      "command": "npx",
+      "args": ["-y", "@your-vendor/email-mcp"],
+      "env": {
+        "EMAIL_API_KEY": "${EMAIL_API_KEY}"
+      }
+    },
+    "calendar": {
+      "//": "Another local stdio server. Swap the package for your calendar provider's MCP.",
+      "command": "npx",
+      "args": ["-y", "@your-vendor/calendar-mcp"],
+      "env": {
+        "CALENDAR_CLIENT_ID": "${CALENDAR_CLIENT_ID}",
+        "CALENDAR_CLIENT_SECRET": "${CALENDAR_CLIENT_SECRET}"
+      }
+    },
+    "crm": {
+      "//": "Remote HTTP server. The API key travels as a header — keep it in an env var, never inline.",
+      "type": "http",
+      "url": "https://mcp.example.com/crm",
+      "headers": {
+        "Authorization": "Bearer ${CRM_API_KEY}"
+      }
+    }
+  }
+}

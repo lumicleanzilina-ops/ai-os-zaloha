@@ -1,0 +1,86 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets — ignore the whole FAMILY, not one filename.
+# Hard Rule 2: a pattern for `.env` does not match `.env.bak.2026-01-01`, and that
+# gap stays invisible until a broad `git add`. Verify with: git check-ignore -v <file>
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.*
+secrets.*
+.secrets/
+.secrets
+*token*.json
+*service-account*.json
+api-keys.*
+# Konfigurace MCP často nese klíče přímo v sobě: do gitu ani do snímku nepatří.
+.mcp.json
+mcp-config.json
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Temp
+/tmp/
+*.tmp
+/work/tmp/
+/work/cache/
+
+# Vývojové fixture, runtime a zálohy upgradu nikdy nejsou distribuční soubory.
+/work/*-tests/
+# Pracovní složky testů (tools/testove-artefakty.mjs): uklízí je kód testů, do Gitu nepatří.
+_test-retained/
+.ai-os-upgrades/
+# Plán upgradu obsahuje absolutní cesty k tvému počítači; do commitu nepatří (receipt je v .ai-os-upgrades/).
+work/upgrade/plan-*.json
+ai-firma-state/
+
+# Skill Curator: skill usage ledger is runtime data (see skills/CURATOR.md).
+# Keep it OUT of git, but keep skills/.archive/ tracked (via its .gitkeep).
+skills/.usage.json
+
+# Carousel: the user's own brand reference images + saved profile are personal.
+# Keep the folder (and its README) tracked, but never commit what they drop in.
+skills/carousel/brand-references/*
+!skills/carousel/brand-references/README.md
+skills/carousel/brand-profile.md
+
+# Any skill's user-supplied examples/references stay local (keep only the README).
+skills/*/examples/*
+!skills/*/examples/README.md
+# Tovární příklady dovedností jsou součást kitu: musí přežít git zálohu i checkpoint.
+!skills/spline-3d/examples/interactive-scene.tsx
+!skills/spline-3d/examples/react-spline-wrapper.tsx
+!skills/spline-3d/examples/vanilla-embed.html
+skills/*/brand-references/*
+!skills/*/brand-references/README.md
+skills/*/assets/*
+!skills/*/assets/README.md
+!skills/time-tracking-dashboard/assets/dashboard-template.jsx
+skills/*/voice-samples/*
+!skills/*/voice-samples/README.md
+
+# Private installation receipts and activation snapshots
+.ai-os/
+
+# Dovednosti zpřístupněné hostu (node tools/zpristupnit-skilly.mjs): symlinky, na Windows kopie. Zakládá je nástroj, do Gitu ani do zálohy nepatří.
+.claude/skills/

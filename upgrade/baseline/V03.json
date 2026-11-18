@@ -1,0 +1,642 @@
+{
+  "schemaVersion": 1,
+  "product": "ai-os",
+  "version": "3.0.0",
+  "files": {
+    ".claude/settings.json": {
+      "sha256": "2b7c12d956ea8bf8f0dec6219cd41585e87bcaff807d957cfafcab3caea3c924",
+      "size": 2293,
+      "mode": 420
+    },
+    ".gitignore": {
+      "sha256": "bf80b4295340c32a48bf59398ca52da150c7a1b32b012382af815bd45ed66974",
+      "size": 983,
+      "mode": 420
+    },
+    "AGENTS.md": {
+      "sha256": "00084d004aa15a67811ede404c3a8e8d15c69c2e66e9f89be4d9ff784ab96298",
+      "size": 21681,
+      "mode": 420
+    },
+    "CLAUDE.md": {
+      "sha256": "a66f5f3d4e4606eec200020a1ffab53dce4e3d91e7e6833fdf69f4ffe873f170",
+      "size": 21118,
+      "mode": 420
+    },
+    "LICENSE.md": {
+      "sha256": "9d149dc1388df9372b1ebb5a2ce107f89eb6cfbe4398e13df776e009023a449d",
+      "size": 1686,
+      "mode": 420
+    },
+    "README.md": {
+      "sha256": "c33b15bf51f6846cdfb8fe0d16d972f72445f2b4ef7acc3ec7a34d6c8f67ad67",
+      "size": 11580,
+      "mode": 420
+    },
+    "START-PROMPT.md": {
+      "sha256": "5e36a45fb3f88015f9fc390524438c63ce5751ebea812303db071f0a56ec4b1e",
+      "size": 6402,
+      "mode": 420
+    },
+    "ZACNI-TADY.md": {
+      "sha256": "4f07714111fee13d273cdd8a5a34ef91f38cb5b598b720cac54c6576c84d55d7",
+      "size": 2866,
+      "mode": 420
+    },
+    "docs/CAPABILITIES.md": {
+      "sha256": "d39d592a46bdeb01d7a424ac72dfe3fb3c0216d83e0724b38dfbc4247d3d265f",
+      "size": 8433,
+      "mode": 420
+    },
+    "docs/SETUP.md": {
+      "sha256": "41fdd00ea3393f1a4f7317d891b89c5f31ea78d74feecc936e5545ac2d804c5a",
+      "size": 8131,
+      "mode": 420
+    },
+    "docs/example-custom-instructions.md": {
+      "sha256": "acaa861328ff13635734fc5a0614761aec452ab80e46ebc0be98543190c70293",
+      "size": 2371,
+      "mode": 420
+    },
+    "docs/learnings/README.md": {
+      "sha256": "b0a0c979622a2a09d6e216570b90a0683920ca98aee903b280a0c7c0e9e37aa4",
+      "size": 620,
+      "mode": 420
+    },
+    "docs/learnings/verify-in-your-weak-spots.md": {
+      "sha256": "2c1eda8cb748d28ab52412a0cdc6e67183c1005ceea1683a33ce9926f6b3157e",
+      "size": 2109,
+      "mode": 420
+    },
+    "docs/plans/README.md": {
+      "sha256": "3381b1da7fcd2f00045e46ca512eaca3d7fa74a74d7453b2385395f1134af189",
+      "size": 451,
+      "mode": 420
+    },
+    "hooks/backup-on-stop.sh": {
+      "sha256": "9882b3154dd769b9147d9d791cc98363b9828189a605a48b0ff661ce4176fcf6",
+      "size": 2543,
+      "mode": 493
+    },
+    "hooks/checkpoint.sh": {
+      "sha256": "fda74fa5152846c340dc68c526ac4532b8fa5e960eef47e8c1d68b43544a2e17",
+      "size": 2922,
+      "mode": 493
+    },
+    "hooks/deny-dangerous.sh": {
+      "sha256": "bbbc52f774071072a318d090c4d23bbdcd7b9a1c60996303d9ca885adcdd5138",
+      "size": 5613,
+      "mode": 493
+    },
+    "hooks/self-review.sh": {
+      "sha256": "9b7a55a30a2b7fba80f497b7ec2e31a9ec50c888da26940db499c7066153be09",
+      "size": 4116,
+      "mode": 493
+    },
+    "hooks/skill-usage.sh": {
+      "sha256": "320c47e8f29c549684cfd924d6ec1708f3c70b420e6d59791de1e77b7dee6852",
+      "size": 2286,
+      "mode": 493
+    },
+    "modules/github-backup/README.md": {
+      "sha256": "6997237b456584ac45c5e5460e5ae38c36c82c82822c45facf650f138a3285d0",
+      "size": 4290,
+      "mode": 420
+    },
+    "modules/github-backup/backup.sh": {
+      "sha256": "432e2c1b56bfc691e3a57b14f86be1539e8da6db41bedf1f80640c6ac59ac846",
+      "size": 1650,
+      "mode": 493
+    },
+    "modules/image-generation/README.md": {
+      "sha256": "784e9d22c210c6b8d729bda0522e135157e35e138538767f95cb35015c40e938",
+      "size": 2900,
+      "mode": 420
+    },
+    "modules/mcp-integrations/README.md": {
+      "sha256": "fbbee259a55210f08a5749462a93893487f5c3d624bec63e7bba32e0686b43e9",
+      "size": 8304,
+      "mode": 420
+    },
+    "modules/mcp-integrations/RECOMMENDED-MCPS.md": {
+      "sha256": "96403b55ae0b5f4040da2d108119e0e3f002ccea606e56485370e623395bbe8a",
+      "size": 10812,
+      "mode": 420
+    },
+    "modules/mcp-integrations/example-mcp-config.json": {
+      "sha256": "0f0e0beb28521d860146beef5fbc42da4da34df6ba9907ab15cc42cc12d29d6f",
+      "size": 1136,
+      "mode": 420
+    },
+    "modules/second-brain/AGENTS.template.md": {
+      "sha256": "b57594a1fc84397bcdc32063a244bf67354e916c7f2bbfcf53f3c73b0fb3ece8",
+      "size": 5085,
+      "mode": 420
+    },
+    "modules/second-brain/README.md": {
+      "sha256": "8b87a4b49323d89f8942054406e34d01b236245eed25bcd5bfbfa2aaab6d20cf",
+      "size": 5713,
+      "mode": 420
+    },
+    "modules/second-brain/brain-sync.py": {
+      "sha256": "c5ef9da99f0ee0ae9e0f932429994ac889ecb1f0601ae13290ca435444f1e378",
+      "size": 7443,
+      "mode": 493
+    },
+    "modules/workspace-structure/README.md": {
+      "sha256": "f371709f7f295de5f878abe742f570e2a74f3caa757bc272c3feb44fd13fd128",
+      "size": 4471,
+      "mode": 420
+    },
+    "projects/project-template/README.md": {
+      "sha256": "30e0af3b6b0ca9150e18a69856937f7f19ac7a0ba42fc57e77f04c380ff73813",
+      "size": 1916,
+      "mode": 420
+    },
+    "reference-photos/README.md": {
+      "sha256": "c7d2d2b01b31c76b95feaf819acb26139e1f9f52b956b5da4f90778f6e18d2bf",
+      "size": 1380,
+      "mode": 420
+    },
+    "scheduled-tasks/BLUEPRINTS.md": {
+      "sha256": "b48f943cdc1b847ffdcd75c79f5c1c545749ce3e729bf85cc9f6ae1755b60dc9",
+      "size": 25098,
+      "mode": 420
+    },
+    "scheduled-tasks/README.md": {
+      "sha256": "f53ae4a8fba548487c58b89443850c0d2f23535a62df50d21fd92383e43c2eca",
+      "size": 6114,
+      "mode": 420
+    },
+    "scheduled-tasks/daily-end-session/SKILL.md": {
+      "sha256": "1833a9fbef7d67adc4534ad5d23f69b9db4d475112227da1eaa9902367acdb3c",
+      "size": 2021,
+      "mode": 420
+    },
+    "scheduled-tasks/morning-briefing/SKILL.md": {
+      "sha256": "a671641ba529f74147505bc36ff3dbc7c14c4a0da40d6e32bc39c8ce3d3c81c2",
+      "size": 6041,
+      "mode": 420
+    },
+    "scheduled-tasks/nightly-backup/SKILL.md": {
+      "sha256": "4741956e9b922a11a0dde12de9de7f8fc06bcf92a60bb27039a430d26e2823a8",
+      "size": 2438,
+      "mode": 420
+    },
+    "scheduled-tasks/second-brain-declutter/SKILL.md": {
+      "sha256": "5bc09c942ac933ad0770fb7002d1d253975e6146c7edc4b67ff8a90b054a978c",
+      "size": 4966,
+      "mode": 420
+    },
+    "scheduled-tasks/weekly-improvement/SKILL.md": {
+      "sha256": "56cdf572d8459eb43aa48a11604061a5b5050a4015d96f6987b4efbd6617b94e",
+      "size": 8263,
+      "mode": 420
+    },
+    "skills/.archive/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "mode": 420
+    },
+    "skills/CURATOR.md": {
+      "sha256": "3b428d9c17af8dbecc9b8761c029793413181fafe002abc2e222fb6e9d82a6b6",
+      "size": 5893,
+      "mode": 420
+    },
+    "skills/README.md": {
+      "sha256": "4da07be0bca12570f0e11508f80996a9cfb186227bf6d1e4f941835e12d5c7a7",
+      "size": 4134,
+      "mode": 420
+    },
+    "skills/brainstorming/SKILL.md": {
+      "sha256": "f81bfb3ea200329ecfb1f168068f86bf01604fa7489a7ffd6138152a0d382061",
+      "size": 2075,
+      "mode": 420
+    },
+    "skills/brand-kit-maker/SKILL.md": {
+      "sha256": "cff15eda9673c9022f9c2026986cb9c717a565b086740bcfcb8b62b1133638ca",
+      "size": 3684,
+      "mode": 420
+    },
+    "skills/brand-kit-maker/assets/README.md": {
+      "sha256": "d93617c2cecbf0e82293cdd075d372ae2558ad3f39b38b4c051377e5a2bee9e7",
+      "size": 1329,
+      "mode": 420
+    },
+    "skills/business-architect/SKILL.md": {
+      "sha256": "5af566a2afdc4ed181613dc193b547ba016ec6445a464b73f0b29425820b6a1b",
+      "size": 4128,
+      "mode": 420
+    },
+    "skills/carousel/README.md": {
+      "sha256": "5006798a9891fb5b97fa8329697d1ed4b77222ab36260c7a15ce9b81d3272f7e",
+      "size": 3325,
+      "mode": 420
+    },
+    "skills/carousel/SKILL.md": {
+      "sha256": "ef6217dc6c6c529e7db1520cac5930b5fb4dc7f5b18420c5c4211e6cd585347b",
+      "size": 5440,
+      "mode": 420
+    },
+    "skills/carousel/brand-references/README.md": {
+      "sha256": "1538b4732ea6fee8866101e4725240a81d200a80a0f50af02bba5cf94ba230e8",
+      "size": 871,
+      "mode": 420
+    },
+    "skills/checkpoint/SKILL.md": {
+      "sha256": "35bc838ff84eedffebdd22bb1fe52bf0387dccb81de291337c6362afbdc3ae30",
+      "size": 2944,
+      "mode": 420
+    },
+    "skills/connect-mcp/SKILL.md": {
+      "sha256": "bdc9f9fa1e606463c487ef6e8acd2185d7d8a1297b3d3fb1d4510a6f1f909aef",
+      "size": 4731,
+      "mode": 420
+    },
+    "skills/content-strategist/SKILL.md": {
+      "sha256": "58732880589ac43161d4d82d273c58cc6b59bfeee4dba93a581955d22bdb9719",
+      "size": 8006,
+      "mode": 420
+    },
+    "skills/debugging/SKILL.md": {
+      "sha256": "d23b5863462baad1b12187cbf5f7155838ecf872e8889ef6c976eeef16588e03",
+      "size": 11877,
+      "mode": 420
+    },
+    "skills/end-session/SKILL.md": {
+      "sha256": "689f1bdd9bb6987d5d53ebb44380ee58f7e61e4ed2acb94ead45694490828242",
+      "size": 3690,
+      "mode": 420
+    },
+    "skills/error-handling-patterns/SKILL.md": {
+      "sha256": "579301fc09d10788da75fa8d263bba553915a31c700220e24887068e2d3d4dab",
+      "size": 5403,
+      "mode": 420
+    },
+    "skills/funnel-architect/SKILL.md": {
+      "sha256": "916b0c8b93abcee047b1b566d54188a39deeb1e6492f96d4bf6a3c190f470b0a",
+      "size": 7469,
+      "mode": 420
+    },
+    "skills/geo-article-writer/SKILL.md": {
+      "sha256": "4e54ddcd2d1465aed520507f932aa06ecdc2a207f2e02e742f3fa52485703f52",
+      "size": 6253,
+      "mode": 420
+    },
+    "skills/interactive-dashboard/SKILL.md": {
+      "sha256": "4c4357209187aef42b1a5fcaecec3c16be0ecbac2c695e9fb7b11d17da676931",
+      "size": 35275,
+      "mode": 420
+    },
+    "skills/mcp-builder/LICENSE.txt": {
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "size": 11357,
+      "mode": 420
+    },
+    "skills/mcp-builder/SKILL.md": {
+      "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+      "size": 9092,
+      "mode": 420
+    },
+    "skills/mcp-builder/reference/evaluation.md": {
+      "sha256": "8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427",
+      "size": 21663,
+      "mode": 420
+    },
+    "skills/mcp-builder/reference/mcp_best_practices.md": {
+      "sha256": "80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
+      "size": 7330,
+      "mode": 420
+    },
+    "skills/mcp-builder/reference/node_mcp_server.md": {
+      "sha256": "c3ba35a4f599dd53be9c6555ae72c19a7bf412cd5426576c2c08d42755482c66",
+      "size": 28550,
+      "mode": 420
+    },
+    "skills/mcp-builder/reference/python_mcp_server.md": {
+      "sha256": "2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
+      "size": 25099,
+      "mode": 420
+    },
+    "skills/mcp-builder/scripts/connections.py": {
+      "sha256": "9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
+      "size": 4875,
+      "mode": 420
+    },
+    "skills/mcp-builder/scripts/evaluation.py": {
+      "sha256": "49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
+      "size": 12579,
+      "mode": 420
+    },
+    "skills/mcp-builder/scripts/example_evaluation.xml": {
+      "sha256": "9272b348ddcc4b06ba562367ccd0770e018158c0068ac5116d5e34aaeff8777a",
+      "size": 1194,
+      "mode": 420
+    },
+    "skills/mcp-builder/scripts/requirements.txt": {
+      "sha256": "d5d7558b2368ecea9dfeed7d1fbc71ee9e0750bebd1282faa527d528a344c3c7",
+      "size": 29,
+      "mode": 420
+    },
+    "skills/offer-architect/SKILL.md": {
+      "sha256": "42441fe814420cfa6ccedaf61f9119153fb1f20dd52e7d53c466eb7d953bec39",
+      "size": 6983,
+      "mode": 420
+    },
+    "skills/pentesting/SKILL.md": {
+      "sha256": "0582614d7eb469ce95940a8db187298e4dd52eeb5c60c0a6bf10550abae66556",
+      "size": 4699,
+      "mode": 420
+    },
+    "skills/planning/SKILL.md": {
+      "sha256": "b5fc116f16d9d7313ececd4bc756e83c8bdfafbfd624a340c56ad0563a379e05",
+      "size": 3281,
+      "mode": 420
+    },
+    "skills/pricing-proposal/SKILL.md": {
+      "sha256": "a63e4bdbb07dfe41e13366755cc737cfbffc9d7a234f6e9e38db49f4d341c7b6",
+      "size": 11728,
+      "mode": 420
+    },
+    "skills/pricing-proposal/examples/README.md": {
+      "sha256": "475aa24d0b6ab0af992854992362c9b392392c44d90498e7f1a6ff3e72208f1f",
+      "size": 728,
+      "mode": 420
+    },
+    "skills/scan/SKILL.md": {
+      "sha256": "65d87d49429fefa5b496f85a91bcf78848050ad4fbe7a0a58b3d5dd1b6cdf16f",
+      "size": 4375,
+      "mode": 420
+    },
+    "skills/second-opinion/SKILL.md": {
+      "sha256": "ca7305a83dd3217d373c4546718129fd0828a45caa72c08a9578aa31c1ce924b",
+      "size": 3095,
+      "mode": 420
+    },
+    "skills/skill-creator/SKILL.md": {
+      "sha256": "b569ae30acf8b0b6540c2d3bc29c8cea7fb6ebf98757dfe267259b7820bd3e6c",
+      "size": 6117,
+      "mode": 420
+    },
+    "skills/slide-deck/SKILL.md": {
+      "sha256": "b518717cbbbf1952c8eb433758f590fefa4f026084a06b6dd15a47145d8ea33b",
+      "size": 3781,
+      "mode": 420
+    },
+    "skills/slide-deck/brand-references/README.md": {
+      "sha256": "e19de69920e35acf824ad6c2d5db44594b0a65cfec5ad186ad64c92d2af43cce",
+      "size": 724,
+      "mode": 420
+    },
+    "skills/spline-3d/SKILL.md": {
+      "sha256": "d2581dbf678d4317cc5e00f101b3784a22f0c121fd42feca7d040b9ec7cf8e46",
+      "size": 3109,
+      "mode": 420
+    },
+    "skills/spline-3d/examples/interactive-scene.tsx": {
+      "sha256": "5da877b45285850c501241793185b8d61f80e281c8733b806c87c944aee87f96",
+      "size": 5934,
+      "mode": 420
+    },
+    "skills/spline-3d/examples/react-spline-wrapper.tsx": {
+      "sha256": "0f631ea66cff799ce4cd70be9ea6192011be8e199fb25973f64d211423aaaae8",
+      "size": 3562,
+      "mode": 420
+    },
+    "skills/spline-3d/examples/vanilla-embed.html": {
+      "sha256": "f3dad889ba7d87a71f2042436dad0ebf9ff3c06060997ceceeb89d6bb9cc0e18",
+      "size": 4297,
+      "mode": 420
+    },
+    "skills/spline-3d/guides/COMMON_PROBLEMS.md": {
+      "sha256": "72d602b54804dccf66ac5ef13f9620f6292d9ce19eb605a02745828f73f054a4",
+      "size": 8963,
+      "mode": 420
+    },
+    "skills/spline-3d/guides/PERFORMANCE.md": {
+      "sha256": "2820899ac0ae6a74816c5f2e84acd98a2651977723dd21bc24630d3702492fa1",
+      "size": 5175,
+      "mode": 420
+    },
+    "skills/spline-3d/guides/REACT_INTEGRATION.md": {
+      "sha256": "30bfa12a92a0c164b79a7a332c0f9bc14c1273c64f02a5b67fa624a582c75851",
+      "size": 4870,
+      "mode": 420
+    },
+    "skills/spline-3d/guides/VANILLA_INTEGRATION.md": {
+      "sha256": "1ba33cb0d9e88d231ed1211f292179a8bb20cab2784ad2042b77a6bd8000f623",
+      "size": 5289,
+      "mode": 420
+    },
+    "skills/time-tracking-dashboard/SKILL.md": {
+      "sha256": "fe2f2ff33d8df13ef4ef81d429dec29adfe429cef3a662d49483f9f580ca6174",
+      "size": 7787,
+      "mode": 420
+    },
+    "skills/time-tracking-dashboard/assets/dashboard-template.jsx": {
+      "sha256": "28bfd933cb405d87126e9b8da8495aa9ee615e5396847caac73173f4730207e7",
+      "size": 17065,
+      "mode": 420
+    },
+    "skills/time-tracking-dashboard/references/design-patterns.md": {
+      "sha256": "3d9d14824a2e785f0cae5dfa2656ac83a5ecc8ce24e523053115247808ce80f3",
+      "size": 6471,
+      "mode": 420
+    },
+    "skills/tone-of-voice-maker/SKILL.md": {
+      "sha256": "f01e3f42e5ef17dde211399d9d62adc4c9b7f1f71e87ddb78b7ecf5cc989e677",
+      "size": 5814,
+      "mode": 420
+    },
+    "skills/tone-of-voice-maker/voice-samples/README.md": {
+      "sha256": "1e5d8ebe7eda8dd9c048f9ca6d3c7fa04308b40fc27fd367c5e1d2cab12285e2",
+      "size": 1180,
+      "mode": 420
+    },
+    "skills/topshit/SKILL.md": {
+      "sha256": "741bedfa54a0c4848490e30c3cc5b0ef5c5d941500ddb24a849d6a32e442d9b2",
+      "size": 2252,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/SKILL.md": {
+      "sha256": "68d9196a05878400174bcb163f75399cd7c4dffa4e72f91813ce1455c3aca8b7",
+      "size": 10878,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/charts.csv": {
+      "sha256": "b754c0efffcf54cb889114a9314be1d5af6ceebe65c4c436d713b52018e752c9",
+      "size": 7654,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/colors.csv": {
+      "sha256": "4cc0df2785f340b8bd0ace50bd4068dc13a7c4c6fa4d9d2723271244ce904614",
+      "size": 9713,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/icons.csv": {
+      "sha256": "351fe61ba45b8146c66de6ea7d67297654639d79a94f537b4d0bad570058c28f",
+      "size": 13384,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/landing.csv": {
+      "sha256": "010e1e46db271b94e0af6f18973bea86ddba62feeccd62aeeaa6ed40e2ae2db1",
+      "size": 14390,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/products.csv": {
+      "sha256": "5359e3037dcb84e99c792ea13dd44f5b78ab6a53557afb309cf19140512aaf5b",
+      "size": 29790,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/react-performance.csv": {
+      "sha256": "904c8afcda229629545912dde0e8ac37503757131f0169f80b016f1f58c4fd3f",
+      "size": 14822,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/astro.csv": {
+      "sha256": "ad18dae3ab6d148d37d144592df80dc1825b6c9e86d9d2d68fdda77434206a37",
+      "size": 11868,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/flutter.csv": {
+      "sha256": "e470e6bc2bcd8562667cc764d1e1afb0be0a30ca4dc9ec12fa18b19d46f156bd",
+      "size": 10469,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/html-tailwind.csv": {
+      "sha256": "1f004891dd189f6bc2a7717401e3100244326e7e2f3963a79bf7b2349d85e091",
+      "size": 11361,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv": {
+      "sha256": "6c8fd4b0391c342c12b0af15610cd5becbeccaef0bbe8dcfc01d928c3195d93e",
+      "size": 8195,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/nextjs.csv": {
+      "sha256": "06a8e8c13bd44696c6ebb4cb6c4d8dea440e3de8cce77616512529ed29258f0c",
+      "size": 12546,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv": {
+      "sha256": "05d6e74501b2b6a636faed32450622759f49a5bcafad971f5f4e7eba0eb7be71",
+      "size": 14010,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/nuxtjs.csv": {
+      "sha256": "f7a3f2d9542856d00199f85c6c023b7c284cc698e2e6e12d61afce2edacb24d6",
+      "size": 16539,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/react-native.csv": {
+      "sha256": "a08ca77fcf6b6d9531982dce465366296013bfcf12d2938ac72ad57cf0c4f085",
+      "size": 10035,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/react.csv": {
+      "sha256": "b6e3eb0e4c9c01bd00ffb951d5ca224a19d488b4544c75436f48cf92ff12bf45",
+      "size": 13016,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/shadcn.csv": {
+      "sha256": "395c2e415ef6f48a474acccdc8eb2c7258a6ed751a5037ba171a2d8823e02ded",
+      "size": 15921,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/svelte.csv": {
+      "sha256": "bc8d158994a8bdf412830a9dd5e5a5534edd2f367a6e50e0ebd4d76f592dfa3f",
+      "size": 11063,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/swiftui.csv": {
+      "sha256": "e87cb9eee208bb753bdab96d4a261c7f830c4317ee90ec098316b248fc32be85",
+      "size": 10872,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/stacks/vue.csv": {
+      "sha256": "9b793c3f4eec85f77a758c09322f2b62f3b3ca549bb713ccf0849ef885934395",
+      "size": 11056,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/styles.csv": {
+      "sha256": "ad3c3236134d833bda01a2faf31ddeaaa1dbd5005fa430dec571fa91b26e5fea",
+      "size": 96553,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/typography.csv": {
+      "sha256": "64695e05ac335ba534aff396c4ba9241c642f80ea53b424251d2669b71c4772b",
+      "size": 31877,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/ui-reasoning.csv": {
+      "sha256": "58fc52fff69f62709f8c7dd460de6f6693699ea820f24287f3301a427c2b554e",
+      "size": 31071,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/ux-guidelines.csv": {
+      "sha256": "1870ee048f2a2bdd60709f8f7adf7f3b6dcad560bc005c8b2915a8ac8639820d",
+      "size": 18766,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/data/web-interface.csv": {
+      "sha256": "10bfc24e09a6a15db8309e6ef9b6881e1d4af97dffb7c99418aefb8e30df7d54",
+      "size": 7472,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/scripts/core.py": {
+      "sha256": "5459d1f04eea03dfb913742d0c03edc5065ac67f6227e4807fa87699662588cb",
+      "size": 10227,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/scripts/design_system.py": {
+      "sha256": "4da1d341f3c7749df51b51db4a543a48a427c3c746eb0e9882a1ab86acf3bb54",
+      "size": 43614,
+      "mode": 420
+    },
+    "skills/ui-ux-pro-max/scripts/search.py": {
+      "sha256": "a449e57060ef5134e98e62fd11f6e240153afd68c27dab89cbb72a3ce55f1498",
+      "size": 5478,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/README.md": {
+      "sha256": "2048a93a414f8eff84848f0cee6f2f94cbf4b80954fe976a8c423257d97c1d04",
+      "size": 2033,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/icons/icon128.png": {
+      "sha256": "3a0969cc035cfbc0503845041405bd683ee226034735aef46b12d064dbb1db36",
+      "size": 4887,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/icons/icon16.png": {
+      "sha256": "7038c68e7910f999af9bc6a4d0aff3b2d7d837cb531671da534a9a1369f4b273",
+      "size": 578,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/icons/icon48.png": {
+      "sha256": "2adbf38f1521a1a90c52d9d1b06a118057fa2c4517886b7315d607c0a5e28c59",
+      "size": 1794,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/manifest.json": {
+      "sha256": "759ad5bfa0b808ad506f856a421d7dc017eb7de541323d74523ca22d26671454",
+      "size": 508,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/popup.css": {
+      "sha256": "7f3d925ea651f2df7b3cadd98309fb7c65332f1b51b5cb7e070ac4d078359c73",
+      "size": 29434,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/popup.html": {
+      "sha256": "c0fc7cfa2464a274e57afbc8a3928dc300300ba2c05a6ddbed001b8e5f993388",
+      "size": 348,
+      "mode": 420
+    },
+    "tools/time-tracking-extension/popup.js": {
+      "sha256": "285d1237e32e4927f8ea9684b369443d2ce8d86f9e382632a852a9290e858a6a",
+      "size": 504740,
+      "mode": 420
+    }
+  }
+}

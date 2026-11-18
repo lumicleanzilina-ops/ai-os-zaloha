@@ -1,0 +1,210 @@
+{
+  "$comment": "AI OS hooks activated after dependency and checkpoint verification. Host callback registration still requires verification in a new session. permissions.allow gained only the read-only rules listed in hooks/config.mjs (KIT_ALLOW).",
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(wc:*)",
+      "Bash(git --version)",
+      "Bash(git check-ignore:*)",
+      "Bash(sw_vers:*)",
+      "Bash(node tools/zpristupnit-skilly.mjs)",
+      "Bash(node tools/zpristupnit-skilly.mjs --nahled:*)",
+      "Bash(node tools/aktivovat-pojistky.mjs)",
+      "Bash(shasum:*)",
+      "Bash(node tools/doctor.mjs)",
+      "Bash(node tools/doctor.mjs --preflight)",
+      "Bash(node tools/kit-completion.mjs template:*)",
+      "Bash(node tools/kit-completion.mjs validate:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "deny-dangerous"
+            ],
+            "timeout": 30
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "checkpoint"
+            ],
+            "timeout": 120
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "checkpoint"
+            ],
+            "timeout": 120
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "guard-root-writes"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "skill-usage"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "self-review"
+            ],
+            "timeout": 30
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "backup-on-stop"
+            ],
+            "timeout": 120
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "zaznam-session"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "learnings-index"
+            ],
+            "timeout": 30
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "kontext-prace"
+            ],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "zaznam-session"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){process.exit(0)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{process.exit(0)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "brain-pripomen"
+            ],
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "--eval",
+              "const f=require('node:fs'),p=require('node:path'),u=require('node:url');let d=p.resolve(process.argv[1]||process.cwd());while(!f.existsSync(p.join(d,'hooks','entry.mjs'))||!f.existsSync(p.join(d,'.claude','settings.json'))){const n=p.dirname(d);if(n===d){console.error('AI OS hook bootstrap not found; protection NOT VERIFIED');process.exit(2)}d=n}process.env.AICOS_KIT_ROOT=d;import(u.pathToFileURL(p.join(d,'hooks','entry.mjs')).href).catch(()=>{console.error('AI OS hook failed; protection NOT VERIFIED');process.exit(2)});",
+              "${CLAUDE_PROJECT_DIR}",
+              "zaznam-session"
+            ],
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

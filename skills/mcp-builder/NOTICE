@@ -1,0 +1,23 @@
+mcp-builder — NOTICE (Apache License, Version 2.0)
+
+Tato dovednost vychází z dovednosti „mcp-builder“ v repozitáři anthropics/skills
+(https://github.com/anthropics/skills/tree/main/skills/mcp-builder),
+Copyright 2026 Anthropic, PBC, licencované pod Apache License, Version 2.0
+(plné znění v souboru LICENSE.txt vedle tohoto souboru).
+
+Změny oproti původnímu dílu (AI OS Kit, 2026; držitel práv k úpravám je uveden v LICENSE.md v kořeni kitu):
+- SKILL.md a reference/evaluation.md, reference/mcp_best_practices.md,
+  reference/node_mcp_server.md, reference/python_mcp_server.md byly přeloženy
+  do češtiny (září 2026). V říjnu 2026 byly do SKILL.md a reference/evaluation.md
+  doplněny podmínky bezpečné instalace, omezení oprávnění a ochrany dat při evaluaci.
+- reference/node_mcp_server.md v říjnu 2026 dostal loopback binding HTTP ukázek,
+  opravený import a bezpečnější předlohu package.json bez destruktivního clean příkazu
+  a historických rozsahů závislostí.
+- scripts/connections.py, scripts/evaluation.py, scripts/example_evaluation.xml
+  jsou beze změny (bajtově shodné s původním dílem).
+- scripts/requirements.txt má od října 2026 připnuté přímé verze; scripts/README.md
+  doplňuje rozsah, bezpečnostní omezení a stav ověření.
+- Pole `license:` ve frontmatteru SKILL.md odkazuje na LICENSE.txt.
+
+Tato dovednost není vytvořena, schválena ani podporována společností Anthropic, PBC;
+AI OS Kit je nezávislý produkt. Při dalším šíření zachovej LICENSE.txt i tento NOTICE.
