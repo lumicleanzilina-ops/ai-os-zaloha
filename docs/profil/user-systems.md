@@ -8,4 +8,7 @@
 - Telefon: iPhone.
 - Kalendář: aplikace Kalendář v iPhonu (2026-11-18); zda je napojená na iCloud či Google, nezjištěno.
 - V Claude session je k dispozici Gmail konektor (claude.ai); zatím nepoužit ani neověřen, správný účet neověřen.
+- GitHub (mapa účtů, 2026-11-18):
+  - `lumicleanzilina-ops` (e-mail lumicleanzilina@gmail.com) — LumiClean / AI OS. Soukromé repo `lumicleanzilina-ops/ai-os-zaloha` = záloha workspace. Push sem JEN tímto účtem.
+  - `mfilova10-source` — jiný účet uložený v počítači (Git Credential Manager); k záloze nemá přístup, nepoužívat pro AI OS.
 - Ostatní nástroje, účty a repozitáře: zatím nezjištěno.
