@@ -1,6 +1,12 @@
 {
   "$comment": "AI OS hooks activated after dependency and checkpoint verification. Host callback registration still requires verification in a new session. permissions.allow gained only the read-only rules listed in hooks/config.mjs (KIT_ALLOW).",
+  "env": {
+    "SECOND_BRAIN_VAULT": "C:\\Users\\HP\\Druhy-mozog"
+  },
   "permissions": {
+    "additionalDirectories": [
+      "C:\\Users\\HP\\Druhy-mozog"
+    ],
     "allow": [
       "Bash(ls:*)",
       "Bash(grep:*)",

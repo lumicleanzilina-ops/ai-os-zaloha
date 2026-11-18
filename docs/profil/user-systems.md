@@ -10,5 +10,7 @@
 - V Claude session je k dispozici Gmail konektor (claude.ai); zatím nepoužit ani neověřen, správný účet neověřen.
 - GitHub (mapa účtů, 2026-11-18):
   - `lumicleanzilina-ops` (e-mail lumicleanzilina@gmail.com) — LumiClean / AI OS. Soukromé repo `lumicleanzilina-ops/ai-os-zaloha` = záloha workspace. Push sem JEN tímto účtem.
+  - Soukromé repo `lumicleanzilina-ops/druhy-mozog` = záloha druhého mozku.
   - `mfilova10-source` — jiný účet uložený v počítači (Git Credential Manager); k záloze nemá přístup, nepoužívat pro AI OS.
+- Druhý mozek: vault `C:\Users\HP\Druhy-mozog` (Markdown + Git), prohlíží v Tolarii 2026.11.10 (Windows). Proměnná SECOND_BRAIN_VAULT v `.claude/settings.json`.
 - Ostatní nástroje, účty a repozitáře: zatím nezjištěno.
